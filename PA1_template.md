@@ -72,7 +72,7 @@ steps_per_day <- aggregate(steps ~ date, good_act, sum)
 hist(steps_per_day$steps, main = "Histogram of total number of steps per day", xlab = "Steps per day")
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](unnamed-chunk-4-1.png)
 
 ``` r
 # Calculate the mean and median of the total number of steps taken per day
@@ -105,7 +105,7 @@ avg_steps_per_day <- aggregate(steps ~ date, good_act, mean)
 plot(avg_steps_per_interval$interval, avg_steps_per_interval$steps, type='l', col=1, main="Average number of steps by Interval", xlab="Time Intervals", ylab="Average number of steps")
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
+![](unnamed-chunk-6-1.png)
 
 ``` r
 # Identify the interval index which has the highest average steps
@@ -160,7 +160,7 @@ steps_per_day_impute <- aggregate(steps ~ date, activity, sum)
 hist(steps_per_day_impute$steps, main = "Histogram of total number of steps per day (IMPUTED)", xlab = "Steps per day")
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-8-1.png)
+![](unnamed-chunk-8-1.png)
 
 ``` r
 # Compute the mean and median of the imputed value
@@ -223,6 +223,6 @@ plt <- ggplot(steps_per_day_impute, aes(interval, steps)) +
 print(plt)
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-11-1.png)
+![](unnamed-chunk-11-1.png)
 
 We do see some subtle differences between the average number of steps between weekdays and weekends. For instance, it appears that the user started a bit later on weekend mornings and tend to do smaller numbers on weekend mornings.
